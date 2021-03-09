@@ -5,3 +5,11 @@ ctx.canvas.width = COLUNA*TAM_BLOCK;
 ctx.canvas.height = LINHA*TAM_BLOCK;
 
 ctx.scale(TAM_BLOCK,TAM_BLOCK);
+
+let painel = new painel();
+
+function play() {
+    painel.reset();
+    console.table(painel.grid);
+
+}
