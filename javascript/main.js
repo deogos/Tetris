@@ -6,9 +6,9 @@ ctx.canvas.height = LINHA*TAM_BLOCK;
 
 ctx.scale(TAM_BLOCK,TAM_BLOCK);
 
-let painel = new painel();
+let painel = new PAINEL()
 
-function play() {
+function play(){
     painel.reset();
     console.table(painel.grid);
 
