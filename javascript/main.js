@@ -51,4 +51,3 @@ if (event.keyCode === KEY.SPACE) {
 if (painel.validar(p)) {
     painel.peca.mover(p);
 }
-
