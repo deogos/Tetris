@@ -28,6 +28,6 @@ class Peca{
     }
     mover(p){
         this.x = p.x;
-        this.y =p.y;
+        this.y = p.y;
     }
 }

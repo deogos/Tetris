@@ -19,11 +19,11 @@ function play(){
 
 }
 
-document.addEventListener('keydown',event=>{
-    if (movimento [event.keyCode]){
+document.addEventListener('keydown',event =>{
+    if (movimento[event.keyCode]){
         event.preventDefault();
 
-        let p = movimento [event.keyCode] (painel.peca);
+        let p = movimento[event.keyCode](painel.peca);
 
         if(painel.validar(p)){
             painel.peca.mover(p);
