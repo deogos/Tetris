@@ -34,10 +34,13 @@ document.addEventListener('keydown',event => {
 
 })
 
+let p = movimento[event.keyCode](painel.peca);
+
 if (event.keyCode === KEY.SPACE) {
-    p = movimento[KEY.DOWN] (painel.peca);
+    
     while (painel.validar(p)) {
         painel.peca.mover(p);
+        p = movimento[KEY.DOWN] (painel.peca);
         ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
         painel.peca.desenho();
     }
